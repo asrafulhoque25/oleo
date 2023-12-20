@@ -1,0 +1,329 @@
+// @media (max-width:1140px)
+@media (max-width:1140px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bestProduct {
+        .bestProductGridItems {
+            grid-template-columns: repeat(3, 1fr) !important;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .gridItem {
+                max-width: 300px;
+            }
+        }
+    }
+
+    .footerTop-unit {
+        padding-top: 50px;
+
+        .footer-top {
+            padding-bottom: 10px;
+            grid-template-columns: repeat(2, 1fr);
+
+            .footer-wrp-info {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .productDetails {
+        .productDetailsGrid-items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+
+
+// @media (max-width:1024px)
+@media (max-width:1024px) {
+    .userShortPanelFor-eCommerce {
+        display: none;
+    }
+
+    .flowerGallery-1-gridItems,
+    .latestProductGrid-items {
+        grid-template-columns: repeat(3, 1fr) !important;
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .gridItem {
+            max-width: 300px;
+        }
+    }
+
+    .flowerFamilyTraditionGrid-items {
+        display: block !important;
+        text-align: center;
+
+        .traditionContent {
+            margin-bottom: 25px;
+
+            .sectionTitle {
+                text-align: center !important;
+            }
+        }
+    }
+
+    .productDetails {
+        padding: 50px 0;
+        ;
+
+        .productDetailsGrid-items {
+            grid-template-columns: repeat(1, 1fr);
+
+            .carouselSlides {
+                --carouselItemMaxWidth: 400px;
+            }
+
+            #carouselSlideSync,
+            #carouselNavSync {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #carouselNavSync {
+                .item {
+                    height: 65px !important;
+                }
+            }
+
+            .productDetailsContent {
+                text-align: center;
+                margin-top: 40px;
+
+                .productCard-price,
+                .selectPricingPlanGrid,
+                .placeOrderInDetailsPage,
+                .socialShare ul {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .reviews {
+        .reviewsGrid-blocks {
+            display: block;
+
+            .photoWidget {
+                margin-top: 30px;
+            }
+
+            .leaveAReview {
+                padding: 10px;
+
+                .leaveAReviewForm .col-full {
+                    display: block;
+                }
+            }
+
+            .totalReview .totalReviewStatus ul li .progress-bar .line {
+                width: 300px !important;
+            }
+        }
+    }
+
+    .currentEventInfo .singleEventInfoGrid-items {
+        display: block;
+        text-align: center;
+
+        .currentEventInfoContent {
+            margin-top: 20px;
+
+            .eventShortInfo {
+                justify-content: center;
+            }
+
+            .currentEventDateLocation {
+                text-align: left;
+            }
+        }
+    }
+
+    .eventsInfo .eventsInfoGrid-items {
+        display: block;
+
+        a.eventsInfoItem {
+            margin-bottom: 20px;
+
+            img {
+                height: calc(20vw + 125px)
+            }
+        }
+    }
+
+}
+
+
+
+// @media (max-width:768px) 
+@media (max-width:768px) {
+    .sectionPadding {
+        padding: 50px 0;
+    }
+
+    .sectionTitle h3.title {
+        font-size: 26px;
+    }
+
+    .flowerFamilyTradition .flowerFamilyTraditionGrid-items .traditionVideoPopUp img.videoCoverImg {
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .navigation {
+        padding: 10px 0;
+
+        #btnMenuToggle {
+            display: block !important;
+        }
+
+        .main-nav {
+            position: fixed;
+            width: 250px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: var(--mainColor);
+            z-index: 100;
+            transform: translateX(-100%);
+            transition: all .3s;
+
+            &.mobile-menu-show {
+                transform: translateX(0%);
+            }
+
+            #main-menu {
+                display: block !important;
+            }
+        }
+    }
+
+    .headerTop {
+        padding: 10px 0;
+
+        .headerTopGrid-items {
+            justify-content: center;
+        }
+
+        .headerTopLeft,
+        .headerTopRight {
+            display: none;
+        }
+    }
+
+
+    .copyright-unit {
+        padding: 20px 0;
+        text-align: center;
+
+        .copyright-wrp {
+            justify-content: center;
+        }
+    }
+}
+
+
+// @media (max-width:576px)
+@media (max-width:576px) {
+    .footerTop-unit {
+        .footer-top {
+            grid-template-columns: repeat(1, 1fr);
+
+            .footerContact-content ul li a {
+                justify-content: center;
+            }
+
+            .ftr-title,
+            .footer-content ul li,
+            .footer-social ul {
+                text-align: center;
+            }
+        }
+    }
+
+    .productDetails {
+        .productDetailsGrid-items {
+            display: block;
+
+            .carouselSlides {
+                --carouselItemMaxWidth: 320px;
+                --carouselItemHeight: 350px;
+            }
+        }
+    }
+
+    .productDetails .productDetailsGrid-items .productDetailsContent .selectPricingPlan .selectPricingPlanGrid,
+    .reviews .reviewsGrid-blocks .totalReview .totalReviewStatus ul li {
+        flex-direction: column;
+    }
+
+    .reviews .reviewsGrid-blocks .totalReview .totalReviewStatus ul li {
+        align-items: flex-start;
+    }
+
+    .reviews .reviewsGrid-blocks .reviewList li .userInfo {
+        display: block;
+
+        .userInfoAll {
+            .imgBox>img {
+                width: 70px;
+                height: 70px;
+            }
+
+            .userDesc .userName {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .reviews .reviewsGrid-blocks .photoWidget {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+    }
+
+
+    .currentEventInfo .singleEventInfoGrid-items {
+        .currentEventInfoContent {
+            .currentEventDateLocation {
+                li {
+                    display: block;
+
+                    .eventAddressBox {
+                        margin-bottom: 20px;
+                        text-align: center;
+                        justify-content: center;
+
+                        .eventIcon {
+                            display: none !important;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .productDetails .productDetailsGrid-items .productDetailsContent .quantity-addToCart .addToCart-panel .btn-add-to-cart {
+        padding-left: 15px;
+        padding-right: 15px;
+        
+    }
+ .productDetails .productDetailsGrid-items .productDetailsContent .quantity-addToCart .quantity-panel .number-input input.quantity {
+    padding: 11px 30px;
+}
+.productDetails .productDetailsGrid-items .productDetailsContent .quantity-addToCart .addToCart-panel .btn-add-to-cart {
+    padding: 12px 20px;
+    font-size: 14px;
+ 
+}
+
+}
